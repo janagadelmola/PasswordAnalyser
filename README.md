@@ -1,10 +1,10 @@
-#  🔐 Password Strength Analyzer
+#  🔐 Password Strength Analyser
 
-A simple Java console application that analyzes the strength of a password based on length, character variety, and common weak patterns.  
+A simple Java console application that analyses the strength of a password based on length, character variety, and common weak patterns.  
 This project demonstrates pattern detection, scoring logic, and clean console interaction.
 
 ## Features
-Analyze passwords based on:
+Analyse passwords based on:
 - Length
 - Uppercase, lowercase, digits, symbols
 - Sequential patterns (123, abc, qwerty, etc.)
@@ -19,10 +19,10 @@ Provides:
 Menu-based interface for analyzing multiple passwords in one session.
 
 ## Project Structure
-PasswordAnalyzer/  
+PasswordAnalyser/  
 └── src/  
-  └── Analyzer/  
+  └── Analyser/  
     ├── Main.java  
-    ├── PasswordAnalyzer.java  
+    ├── PasswordAnalyser.java  
     ├── PasswordScore.java  
     └── PatternChecker.java
