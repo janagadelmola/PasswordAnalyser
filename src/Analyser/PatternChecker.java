@@ -62,4 +62,21 @@ public class PatternChecker {
         }
         return false;
     }
+
+    public static boolean hasYearPattern(String password) {
+    // looking for any 4 digit number between 1900 and 2026
+    for (int i = 0; i < password.length() - 3; i++) {
+        String chunk = password.substring(i, i + 4);
+
+        if (chunk.matches("\\d{4}")) {
+            int year = Integer.parseInt(chunk);
+
+            if (year >= 1900 && year <= 2026) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
 }

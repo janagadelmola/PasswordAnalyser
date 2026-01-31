@@ -42,9 +42,15 @@ public class PasswordAnalyser {
         }
 
         if (!PatternChecker.hasRepeatedChars(password)) {
-            score.addScore(10);
+            score.addScore(5);
         } else {
             score.addSuggestion("Avoid using repeated characters in your password.");
+        }
+
+        if (!PatternChecker.hasYearPattern(password)) {
+            score.addScore(5);
+        } else {
+            score.addSuggestion("Avoid using years.");
         }
 
         return score;
